@@ -7,7 +7,7 @@ It is possible to define one handle for horizontal and one for vertical resize a
 ![Demo CountPages alpha](https://github.com/tomBandzak/react-resizer/blob/master/resizers_sm.gif)
 
 Usage:
-
+```javascript
 const handlesR = {
   horizontal: {
     border: "right",
@@ -15,9 +15,5 @@ const handlesR = {
   },
 };
 
-ReactDOM.render(
-    <Resizer handles={handlesR}>
-        <div className="resized-example-r" style={{}} />
-    </Resizer>, 
-    document.getElementById('resizer-right')
-);
+ReactDOM.render(<Resizer handles={handlesR}><div className="resized-example-r" style={{}} /></Resizer>, document.getElementById('resizer-right'));
+```
