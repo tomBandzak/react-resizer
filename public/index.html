@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React Resizer component examples</title>
+    <style>
+      .resizer-wrap {
+        margin: 15px 0px;
+        width: 300px;
+        height: 150px;
+        background-color: cornflowerblue;
+      }
+
+      .resizer-ver-wrap {
+        margin: 15px 0px;
+        width: 150px;
+        height: 300px;
+        background-color: cornflowerblue;
+      }
+
+      .resized-example-r {
+        width: 150px;
+        height: 150px;
+        background-color: green;
+      }
+
+      .resized-example-l {
+        width: 150px;
+        height: 150px;
+        background-color: green;
+        float: right;
+      }
+
+      .hor-resize-handle,
+      .hor-resize-handle-l {
+        position: relative;
+        left: 0px;
+        width: 0px;
+        height: inherit;
+        border-left: solid black 1px;
+      }
+      .hor-resize-handle-l {
+        float: right;
+      }
+
+      .hor-resize-handle:hover,
+      .hor-resize-handle-l:hover {
+        border-left: solid red 3px;
+        cursor: ew-resize;
+      }
+
+      .v-resize-handle {
+        position: relative;
+        top: 0px;
+        width: inherit;
+        height: 0px;
+        border-top: solid black 1px;
+      }
+      .v-resize-handle:hover {
+        border-top: solid red 3px;
+        cursor: ns-resize;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript.</noscript>
+    <h3>Horizontal resizer from right</h3>
+    <div id="resizer-right" class="resizer-wrap"></div>
+    <h3>Horizontal resizer from left</h3>
+    <div id="resizer-left" class="resizer-wrap"></div>
+    <h3>Vertical resizer from bottom</h3>
+    <div id="resizer-bottom" class="resizer-ver-wrap"></div>
+    <div id="resizer-both"></div>
+  </body>
+</html>
